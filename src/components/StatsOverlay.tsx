@@ -17,7 +17,7 @@ export default function StatsOverlay() {
   }, [])
 
   return (
-    <div className="fixed top-4 right-4 z-50 border-2 border-black bg-[#faf8f5] px-4 py-2.5">
+    <div className="fixed top-4 right-4 z-50 border-2 border-black bg-[#faf8f5] px-4 py-2.5 hidden md:block">
       <span className="font-[family-name:var(--font-ibm-plex-mono)] text-base tracking-wider text-black">
         {size.w}x{size.h} {' | '} x:{mouse.x} y:{mouse.y}
       </span>

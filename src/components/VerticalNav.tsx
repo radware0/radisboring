@@ -12,7 +12,7 @@ export default function VerticalNav() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 h-full w-[160px] flex flex-col justify-between px-6 py-8 z-50">
+    <nav className="fixed top-0 left-0 h-full w-[160px] hidden md:flex flex-col justify-between px-6 py-8 z-50">
       <div>
         <div className="mb-20 flex justify-center">
           <Logo />

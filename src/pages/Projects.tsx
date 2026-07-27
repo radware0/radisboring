@@ -5,7 +5,7 @@ const categories = ['ARCHIVES', 'ARTWORK'] as const
 
 export default function Projects() {
   return (
-    <section className="min-h-screen flex items-center px-16 pt-24 pb-16">
+    <section className="min-h-screen flex items-center px-4 md:px-16 pt-24 pb-16">
       <div className="w-full">
         <div className="mb-16">
           <StampTitle src="/projects-0.png">PROJECTS</StampTitle>
@@ -19,7 +19,7 @@ export default function Projects() {
               <h2 className="font-[family-name:var(--font-ibm-plex-mono)] font-bold text-sm tracking-wider uppercase text-black mb-4">
                 {cat}
               </h2>
-              <div className="grid grid-cols-2 gap-x-0 gap-y-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-0 gap-y-8">
                 {entries.map((entry) => (
                   <div key={entry.title}>
                     <div className="aspect-square overflow-hidden flex items-center justify-center">
