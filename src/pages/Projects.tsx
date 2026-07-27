@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import StampTitle from '../components/StampTitle'
 import { projectsEntries } from '@/data/projects'
 
@@ -5,7 +6,9 @@ const categories = ['ARCHIVES', 'ARTWORK'] as const
 
 export default function Projects() {
   return (
-    <section className="min-h-screen flex items-center px-4 md:px-16 pt-24 pb-16">
+    <>
+      <Helmet><title>PROJECTS — Rad</title></Helmet>
+      <section className="min-h-screen flex items-center px-4 md:px-16 pt-24 pb-16">
       <div className="w-full">
         <div className="mb-16">
           <StampTitle src="/projects-0.png">PROJECTS</StampTitle>
@@ -42,5 +45,6 @@ export default function Projects() {
         })}
       </div>
     </section>
+    </>
   )
 }

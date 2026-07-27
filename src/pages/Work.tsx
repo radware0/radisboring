@@ -1,8 +1,11 @@
+import { Helmet } from 'react-helmet-async'
 import GridSection from '../components/GridSection'
 
 export default function Work() {
   return (
-    <GridSection id="work" title="VIEWS" titleSrc="/views-0.png">
+    <>
+      <Helmet><title>VIEWS — Rad</title></Helmet>
+      <GridSection id="work" title="VIEWS" titleSrc="/views-0.png">
       My view towards art is different, but not too different on how 
       people view lots of art styles in their own perspective. For me,
       art is art. Everything can be art, thousands of art styles can be
@@ -16,5 +19,6 @@ export default function Work() {
       to this and write my own essay regarding to everything I find in the
       INTERNET...
     </GridSection>
+    </>
   )
 }

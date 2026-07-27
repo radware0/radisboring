@@ -1,9 +1,12 @@
+import { Helmet } from 'react-helmet-async'
 import StampTitle from '../components/StampTitle'
 import { carouselImages } from '../data/carousel'
 
 export default function Home() {
   return (
-    <section className="min-h-screen flex flex-col px-4 md:px-16">
+    <>
+      <Helmet><title>Home — Rad</title></Helmet>
+      <section className="min-h-screen flex flex-col px-4 md:px-16">
       <div className="flex-1 flex items-center">
         <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-0 border-2 border-black">
 
@@ -28,5 +31,6 @@ export default function Home() {
         </div>
       </div>
     </section>
+    </>
   )
 }
