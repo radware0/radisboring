@@ -5,7 +5,7 @@ import { carouselImages } from '../data/carousel'
 export default function Home() {
   return (
     <>
-      <Helmet><title>Home — Rad</title></Helmet>
+      <Helmet><title>HOME — Rad</title></Helmet>
       <section className="min-h-screen flex flex-col px-4 md:px-16">
       <div className="flex-1 flex items-center">
         <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-0 border-2 border-black">
